@@ -1,7 +1,5 @@
 # springboot-basics
 
-# Spring Boot - FirstProject
-
 - DTO, Entity 분리해서 데이터 변환 처리
 - Service 계층 도입으로 비즈니스 로직 분리
 - JPA Repository 활용한 CRUD 구현
