@@ -1,0 +1,29 @@
+{{>layouts/header}}
+
+<div class="container mt-4">
+    <h2>Member List</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#memberList}}
+            <tr>
+                <th scope="row">{{id}}</th>
+                <td><a href="/members/{{id}}">{{email}}</a></td>
+                <td>{{password}}</td>
+            </tr>
+        {{/memberList}}
+        </tbody>
+    </table>
+
+    <div class="mt-3">
+        <a href="/members/new" class="btn btn-primary">New Member</a>
+    </div>
+</div>
+
+{{>layouts/footer}}
